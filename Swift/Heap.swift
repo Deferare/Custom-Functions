@@ -10,6 +10,10 @@ public struct Heap<T> {
         return nodes.count
     }
 
+    public var isEmpty: Bool {
+        return nodes.count == 0
+    }
+
     public func peek() -> T? {
         return nodes.first
     }
